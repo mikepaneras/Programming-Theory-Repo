@@ -83,4 +83,8 @@ public class SelectionManager : MonoBehaviour
     {
         selectedClass.MyAbility();
     }
+    public void CallWeapon()
+    {
+        selectedClass.MyWeapon();
+    }
 }
