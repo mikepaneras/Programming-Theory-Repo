@@ -7,32 +7,38 @@ using TMPro;
 public abstract class Class : MonoBehaviour
 {
     public TextMeshProUGUI chatBox;
+
     // ENCAPSULATION
     public int hp { get; protected set; }
     public int mana { get; protected set; }
     public string ability { get; protected set; }
     public string className { get; protected set; }
 
+    // ABSTRACTION
     public void MyHealth()
     {
         chatBox.text = $"My health is {hp} points";
     }
 
+    // ABSTRACTION
     public void MyMana()
     {
         chatBox.text = $"My mana is {mana} points";
     }
 
+    // ABSTRACTION
     public void MyClass()
     {
         chatBox.text = $"I'm a {className}!";
     }
 
+    // ABSTRACTION
     public void MyAbility()
     {
         chatBox.text = $"My ability is {ability}";
     }
 
+    // POLYMORPHISM
     public virtual void MyWeapon()
     {
         // Nothing needed here.
